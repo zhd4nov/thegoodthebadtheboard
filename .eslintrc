@@ -53,7 +53,6 @@
                 "custom": "ignore"
             }
         ],
-        "prettier/prettier": "error",
         "react/no-unescaped-entities": "off",
         "import/no-cycle": [
             0,
