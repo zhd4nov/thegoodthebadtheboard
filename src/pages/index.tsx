@@ -1,19 +1,23 @@
 import Head from 'next/head';
 
+import { withTranslation } from '../../i18n';
+
 import Layout from '../containers/layout/Layout';
 
-export default function Home(): JSX.Element {
+function Index({ t }): JSX.Element {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>The Board</title>
       </Head>
 
       <Layout>
         <h1 className="text-green-800 hover:text-green-500 cursor-default font-bold">
-          The Good, The Bad & The Board
+          {t('example')}
         </h1>
       </Layout>
     </>
   );
 }
+
+export default withTranslation('common')(Index);

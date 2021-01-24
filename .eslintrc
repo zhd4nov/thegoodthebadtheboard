@@ -72,6 +72,14 @@
         ],
         "react/react-in-jsx-scope": "off"
     },
+    "overrides": [
+        {
+          "files": ["*.js"],
+          "rules": {
+            "@typescript-eslint/no-var-requires": "off"
+          }
+        }
+      ],
     "settings": {
         "import/resolver": {
             "babel-module": {
