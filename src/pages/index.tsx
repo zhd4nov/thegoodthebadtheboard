@@ -1,10 +1,15 @@
 import Head from 'next/head';
 
+import { ReactNode } from 'react';
 import { withTranslation } from '../../i18n';
 
 import Layout from '../containers/layout/Layout';
 
-function Index({ t }): JSX.Element {
+interface Props {
+  t(ns: string): ReactNode;
+}
+
+function Index({ t }: Props): JSX.Element {
   return (
     <>
       <Head>
@@ -19,5 +24,9 @@ function Index({ t }): JSX.Element {
     </>
   );
 }
+
+Index.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+});
 
 export default withTranslation('common')(Index);
