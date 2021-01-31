@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { ReactNode } from 'react';
 import { withTranslation } from '../../i18n';
 
-import Layout from '../containers/layout/Layout';
+import Layout from '../entities/landing/layout/layout';
 
 interface Props {
   t(ns: string): ReactNode;

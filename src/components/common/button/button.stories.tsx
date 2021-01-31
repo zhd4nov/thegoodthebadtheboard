@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Meta } from '@storybook/react';
-import Button from './Button';
+import Button from './button';
 
 export default {
   title: 'Components/Button',

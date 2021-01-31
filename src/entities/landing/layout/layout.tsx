@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './header';
+import Footer from './footer';
 
 const Layout = ({ children }) => (
   <div className="flex flex-col w-full min-h-screen ">
